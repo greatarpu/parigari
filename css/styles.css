@@ -1,10 +1,54 @@
 /*general css */
-.tools-container {
+@media screen and (max-width: 699px) {
+
+    /* Styles placed here only apply to screens 0px to 699px wide */
+    .carousel-inner {
+        height: 350px !important;
+    }
+
+    .hero-slider .carousel-item {
+        height: 350px !important;
+        min-height: 350px !important;
+    }
+
+    .about-header {
+        padding: 30px 0px !important;
+    }
+
+    img.logo {
+        height: 60px !important;
+    }
+
+    .navbar-brand {
+        font-size: 16px !important;
+    }
+}
+
+.tools-left {
     display: none !important;
 }
 
 img.logo {
     height: 80px;
+}
+
+a.nav-link.active {
+    color: #ae1500 !important;
+    font-weight: 600;
+    border-bottom: solid 1px #ae1500;
+}
+
+a.nav-link {
+    margin-right: 20px;
+}
+
+img.footer-logo {
+    height: 100px;
+    width: auto;
+}
+
+p.social-media a {
+    margin-right: 8px;
 }
 
 :root {
@@ -16,6 +60,7 @@ img.logo {
     --card-bg: #ffffff;
     --nav-bg: #ffffff;
     --section-alt: #f8f9fa;
+    --bs-primary-rgb: 174, 21, 0 !important;
 }
 
 body.dark-mode {
@@ -25,7 +70,9 @@ body.dark-mode {
     --card-bg: #1e1e1e;
     --nav-bg: #1a1a1a;
     --section-alt: #181818;
-    --primary-color: #4da3ff;
+    --primary-color: #ae1500 !important;
+
+
 }
 
 body {
@@ -35,6 +82,7 @@ body {
     color: var(--text-color);
     transition: all 0.3s ease;
 }
+
 
 /* Accessibility & WhatsApp Floating Icons */
 .tools-container {
@@ -128,10 +176,19 @@ body {
     border: 2px solid var(--primary-color);
 }
 
+/*about page css */
+.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/group.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
 /*people page css */
 /* Founder Tribute Section */
 .founder-memorial {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1499244015948-ac75439983c3?auto=format&fit=crop&w=1350');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/bg1.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: white;
@@ -226,6 +283,43 @@ footer {
     background-color: var(--nav-bg);
 }
 
+/*contact page css */
+.hero-inner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/group.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    color: white;
+}
+
+.social-card {
+    transition: transform 0.3s;
+    border: none;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    opacity: 0.8;
+}
+
+.testimonial-box {
+    border-left: 5px solid var(--primary-color);
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
 /*bootstrap css over ride*/
 .btn.btn-primary {
     background-color: #ae1500;
@@ -249,5 +343,10 @@ footer {
 }
 
 .text-primary {
+    color: #8a1100 !important;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
     color: #8a1100 !important;
 }
