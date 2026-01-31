@@ -293,7 +293,7 @@ footer {
 
 /*contact page css */
 .hero-inner {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/group.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/group.jpg');
     background-size: cover;
     padding: 100px 0;
     color: white;
@@ -328,7 +328,7 @@ footer {
     border-radius: 0 10px 10px 0;
 }
  .contact-header {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/young-colleagues-working-together-cafe.jpg);
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/young-colleagues-working-together-cafe.jpg');
             background-size: cover;
             background-position: 0px 30%;
             color: white;
