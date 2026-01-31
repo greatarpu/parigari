@@ -327,6 +327,13 @@ footer {
     padding: 20px;
     border-radius: 0 10px 10px 0;
 }
+ .contact-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/young-colleagues-working-together-cafe.jpg);
+            background-size: cover;
+            background-position: 0px 30%;
+            color: white;
+            padding: 100px 0;
+        }
 
 /*bootstrap css over ride*/
 .btn.btn-primary {
